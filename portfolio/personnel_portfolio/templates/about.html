@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, rgba(255, 123, 255, 0.7), rgba(123, 104, 238, 0.7), rgba(255, 159, 64, 0.7));
+            color: black;
+            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-size: 300% 300%;
+            animation: gradientShift 10s ease infinite;
+        }
+        .content {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        img {
+            margin-top: 10%;
+            max-width: 80%;
+            height: 500px;
+            border-radius: 20px;
+            transition: transform 0.1s ease-out;
+        }
+
+        /* Animation for the gradient */
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Hello! I'm Sujan Tamang.</h1>
+        <p>
+            I have a strong interest in technology and design, <br>
+            always looking for ways to improve my skills.<br>
+            I enjoy learning new ideas, solving difficult problems,<br> 
+            and staying updated with the latest trends. This helps me stay motivated to create new and <br>
+            better solutions while always learning more.
+        </p>
+        <p>
+            Age: 19 <br>
+            Email: sujanmakalu@gmail.com<br>
+            Permanent Address: Makalu - 5, Num<br>
+            Temporary Address: Kathmandu, Nepal<br>
+            Status: Available<br>
+        </p>
+    </div>
+    <div class="image">
+        <img src="progile.jpg" alt="Sujan Tamang">
+    </div>
+</body>
+</html>
