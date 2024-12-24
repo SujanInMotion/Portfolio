@@ -24,6 +24,15 @@ SECRET_KEY = 'django-insecure-(5=++q)y^fbnqy%e7m!lky6=wz0pi@kzv%$%j+s%je&-jdvvsd
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# settings.py
+
+# Email settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # Or your preferred SMTP service
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'sujanprogrammer@gmail.com'  # Your email
+EMAIL_HOST_PASSWORD = '@sujan.makalu.password@789'  # Your email password or app-specific password
 
 ALLOWED_HOSTS = []
 
@@ -81,15 +90,16 @@ WSGI_APPLICATION = 'porfolio.wsgi.application'
 #     }
 # }
 
+
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.oracle",
-        "NAME": "sujan",
-        "USER": "postgresql",
-        "PASSWORD": "sujan@789",
-        "HOST": "localhost",
-        "PORT": "5432",
-    }
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'database_1',
+        'USER': 'postgres',
+        'PASSWORD': 'sujan@789',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    },
 }
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -126,8 +136,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [
+    BASE_DIR / "templates",
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+

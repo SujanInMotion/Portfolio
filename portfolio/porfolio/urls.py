@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from personnel_portfolio.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+     path('',home),
+     path('send_email/',send_email, name='send_email'),
 ]
