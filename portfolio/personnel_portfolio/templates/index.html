@@ -18,6 +18,7 @@
       min-height: 100vh;
       background-size: 300% 300%;
       animation: gradientShift 10s ease infinite;
+      behavior: 'smooth', 
     }
 
     @keyframes gradientShift {
@@ -100,10 +101,218 @@
       transform: none; /* Disable scaling on hover */
     }
 
+    // home css end */
+
+    /* about start */
+    .content2 {
+      flex: 1;
+      margin-right: 20px;
+  }
+  .image2 {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+  }
+  img {
+      margin-top: 10%;
+      max-width: 80%;
+      height: 500px;
+      border-radius: 20px;
+      transition: transform 0.1s ease-out;
+  }
+
+  /* Animation for the gradient */
+  @keyframes gradientShift {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+ 
+    .container2{
+    //  background: linear-gradient(45deg, rgba(255, 123, 255, 0.7), rgba(123, 104, 238, 0.7), rgba(255, 159, 64, 0.7));
+            color: black;
+            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-size: 300% 300%;
+            animation: gradientShift 10s ease infinite;
+    }
+
+    /* about end */
+
+    /* skills start */
+
+    .container3 {
+      max-width: 600px;
+     
+      margin: auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-top:12%;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    .skill-bar {
+      margin: 10px 0;
+      height: 25px;
+      border-radius: 10px;
+      background-color: #e0e0e0;
+    }
+    .skill-fill {
+      height: 100%;
+      border-radius: 10px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      line-height: 25px;
+    }
+    .html { background-color: #e34c26; }
+    .css { background-color: #f7df1e; }
+    .py { background-color: #f7df1e; }
+    .ph { background-color:rgb(49, 186, 173); }
+    .c { background-color:rgb(181, 68, 37); }
+
+    /* skills end */
+
+    /* services */
+  
+      .container4{
+     // background: linear-gradient(45deg, rgba(255, 123, 255, 0.7), rgba(123, 104, 238, 0.7), rgba(255, 159, 64, 0.7));
+      color: black;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      flex-direction: column;
+          }
+
+      .services-text {
+        margin-top: 20px;
+      }
+      .service-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      .service-icons img {
+        width: 100px; /* Adjust the size as needed */
+        height:100px; /* Adjust the size as needed */
+        border-radius : 10% ;
+      }
+
+      /* services end **
+
+    
+
+    /* from start */
+
+    .container4{
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background-size: 300% 300%;
+    }
+    .contact-form-container4 {
+      max-width: 520px;
+      margin: 50px auto;
+      max-height: 520px;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 30px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-form-container4 h2 {
+      text-align: center;
+      color: #007bff;
+      margin-bottom: 30px;
+  }
+
+  .form-group label {
+      font-weight: bold;
+      color: #333;
+  }
+
+  .form-control {
+      border-radius: 10px;
+      padding: 15px;
+      border: 1px solid #ccc;
+  }
+
+  .form-control:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+
+  .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      padding: 10px 20px;
+      font-size: 16px;
+      width: 100%;
+      border-radius: 5px;
+  }
+
+  .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+  }
+
+  .form-footer {
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  .form-footer a {
+      text-decoration: none;
+      color: #007bff;
+  }
+
+  .form-footer a:hover {
+      text-decoration: underline;
+  }  
+
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  /* form end */
+
   </style>
 </head>
 <body>
+  
 
+  
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Sujan</a>
@@ -117,10 +326,10 @@
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Services</a></li>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Skills</a></li>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about-us">About</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#services-us">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#skill-us">Skills</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#contact-us">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -184,6 +393,9 @@
     </div>
   </div>
 
+
+
+
   <script>
     const texts = ["Sujan", "Developer", "Traveler","Student"];
     let index = 0;
@@ -191,6 +403,136 @@
       document.getElementById("dynamic-text").textContent = texts[index];
       index = (index + 1) % texts.length;
     }, 1000);
+
+   
+      document.querySelectorAll('.navbar a').forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault(); // Prevent default link behavior
+          const target = document.querySelector(this.getAttribute('href'));
+          target.scrollIntoView({
+            behavior: 'smooth', // Smooth scrolling effect
+            block: 'start' // Scroll to the top of the section
+          });
+        });
+      });
+    
   </script>
+
+ 
+
+
+
+<div class= "container2" id='about-us'> 
+  <div class="content2">
+    <h1>Hello! I'm Sujan Tamang.</h1>
+    <p>
+        I have a strong interest in technology and design, <br>
+        always looking for ways to improve my skills.<br>
+        I enjoy learning new ideas, solving difficult problems,<br> 
+        and staying updated with the latest trends. This helps me stay motivated to create new and <br>
+        better solutions while always learning more.
+    </p>
+    <p>
+        Age: 19 <br>
+        Email: sujanmakalu@gmail.com<br>
+        Permanent Address: Makalu - 5, Num<br>
+        Temporary Address: Kathmandu, Nepal<br>
+        Status: Available<br>
+    </p>
+    <a href="cv.pdf" download="cv.pdf" class="btn btn-primary btn-lg" style="width: 150px;">
+      <i class="bi bi-download"></i> Download CV
+    </a>
+
+</div>
+<div class="image2">
+    <img src="progile.jpg" alt="Sujan Tamang">
+</div>
+</div>
+
+
+
+
+<div class="container4" id='services-us'>
+  <div class="services-text">
+      <h2>Services</h2>
+      <p>
+          I offer a range of services for websites and businesses, 
+          including website development with Python and Django, <br>
+          logo creation, and graphic design using Canva and Photoshop.
+          I also provide video editing services to help you create engaging content. <br>
+          Whether you need a new website, branding materials, or multimedia content, 
+          I provide complete solutions to meet your digital needs.
+      </p>
+  </div>
+
+  <div class="service-icons">
+      <img src="python.png" alt="python-logo" />
+      <img src="canva.png" alt="canva-logo" />
+      <img src="photoshop.png" alt="photoshop-logo" />
+   </div>
+  </div>
+
+ 
+
+
+<div class="container3" id='skill-us'>
+  <h2>My Skills</h2>
+
+  <div class="skill-bar">
+    <div class="skill-fill html" style="width: 90%;">HTML - 90%</div>
+  </div>
+
+  <div class="skill-bar">
+    <div class="skill-fill css" style="width: 60%;">CSS - 60%</div>
+  </div>
+
+  <div class="skill-bar">
+    <div class="skill-fill py" style="width: 60%;">Python - 60%</div>
+  </div>
+
+  <div class="skill-bar">
+      <div class="skill-fill ph" style="width: 70%;">Photoshop - 70%</div>
+    </div>
+
+    <div class="skill-bar">
+      <div class="skill-fill c" style="width: 80%;">Canva - 80%</div>
+    </div>
+
+</div>
+
+  
+<div class="container4" id='contact-us'>
+    <div class="contact-form-container4">
+        <h2>Contact Us</h2>
+        <form>
+            <!-- Name input -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- Email input -->
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Message textarea -->
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Write your message" required></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+</div>
+
+
+
+
 </body>
+
 </html>
